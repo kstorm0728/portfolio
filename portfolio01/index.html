@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+<body>
+  <!-- navbar-section -->
+  <nav class="navbar">
+    <a href="#" id="navbar__logo">KS</a>
+    <div class="navbar__toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="navbar__menu">
+      <a href="#about-link" class="navbar__link"><li>About Me</li></a>
+      <a href="#works-link" class="navbar__link"><li>Works</li></a>
+      <a href="#contact-form" class="navbar__link"><li>Contact</li></a>
+    </ul>
+  </nav>
+
+  <!-- hero-section -->
+  <div class="hero">
+    <video src="./images/hero-bg.mp4" autoplay loop muted></video>
+    <h1>My Portfolio</h1>
+  </div>
+
+  <!-- about-section -->
+  <div class="about" id="about-link">
+    <h1>About Me</h1>
+    <div class="about__content">
+      <p class="name"><span>名前：</span>佐藤　一輝</p>
+      <p class="age"><span>年齢：</span>27</p>
+      <div class="career">
+        <span>経歴：</span>
+        <p class="career__content">
+          出身地の長野県から大学で東京へ。
+          大学卒業後は２年間、神奈川県の私立中学校で英語教員を務めた。
+          その後、ボウリング業界へ転職。
+          現在は、フロントエンドエンジニアを目指して勉強中です。
+        </p>
+      </div>
+      <p class="skill"><span>スキル：</span>HTML5, CSS3, JavaScript, JQuery, Bootstrap, React</p>
+      <p class="hobby"><span>趣味：</span>ボウリング、筋トレ、ポケモンGO</p>
+    </div>
+  </div>
+
+  <!-- works-section -->
+  <div class="works" id="works-link">
+    <h1>Works</h1>
+    <div class="works-inner">
+      <div class="work">
+        <p>架空のスポーツジムサイト</p>
+        <img id="modal01" src="./images/24hours.jpeg" alt="">
+      </div>
+      <div class="work">
+        <p>Todoアプリ</p>
+        <img id="modal02" src="./images/todoapp.png" alt=""></a>
+      </div>
+      <div class="work">
+        <p>ウェブサイト模写<span>（コーディング練習）</span></p>
+        <img id="modal03" src="./images/coding.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- works-modal-section -->
+  <div class="works-modal">
+    <div class="modal modal01-content">
+      <div class="modal-inner">
+        <p class="modal-title">架空のスポーツジムサイト</p>
+        <p class="modal-skill">使用スキル：HTML, CSS, JQuery, Bootstrap</p>
+        <a href="https://growgym-a991b.firebaseapp.com/" class="modal-link">
+          サイトを見る
+        </a>
+        <p class="close-modal">閉じる</p>
+      </div>
+    </div>
+    <div class="modal modal02-content">
+      <div class="modal-inner">
+        <p class="modal-title">To Doアプリ</p>
+        <p class="modal-skill">使用スキル：React, CSS</p>
+        <a href="https://englishvocabularyapp-21a5c.web.app/" class="modal-link">
+          アプリを見る
+        </a>
+        <p class="close-modal">閉じる</p>
+      </div>
+    </div>
+    <div class="modal modal-large modal03-content">
+      <div class="modal-inner">
+        <p class="modal-large-dscr">コーディング練習用に既存のウェブサイトを見た目のみを参考に再現したものです<br>（画像は元のサイトのものを引用しました）</p>
+        <div class="modal-large-inner">
+          <div class="pokemongo">
+            <p class="modal-title">スマホアプリゲーム『ポケモンGO』のウェブサイトです。</p>
+            <p class="modal-skill">使用スキル：React, CSS</p>
+            <a href="https://pokemongo-b1dcd.firebaseapp.com/" class="modal-link">サイトを見る</a>
+          </div>
+          <div class="rankseeker">
+            <p class="modal-title">ボウリングの情報を発信している「Rankseeker」というウェブサイトです。</p>
+            <p class="modal-skill">使用スキル：React</p>
+            <a href="https://rankseeker-react.firebaseapp.com/" class="modal-link">サイトを見る</a>
+          </div>
+        </div>
+        <p class="close-modal">閉じる</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- skill-section -->
+  <!-- <div class="skill">
+    <div class="language">
+      <img src="./images/html.png" alt="">
+    </div>
+    <div class="language">
+      <img src="./images/css.png" alt="">
+    </div>
+    <div class="language">
+      <img src="./images/javascript.png" alt="">
+    </div>
+    <div class="language">
+      <img src="./images/react.png" alt="">
+    </div>
+    <div class="language">
+      <img src="./images/jquery.png" alt="">
+    </div>
+  </div> -->
+
+  <div id="contact-form">
+    <h1>お問い合わせ</h1>
+    <form action="https://formspree.io/f/xknknzzz" method="POST">
+      <div class="form-group">
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="message">お問い合わせ内容</label>
+        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+      </div>
+      <button type="submit">送信</button>
+    </form>
+  </div>
+
+  <script src="jquery.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
